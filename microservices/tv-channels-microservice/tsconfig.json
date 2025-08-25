@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS", // по-лесно за Node.js
+    "rootDir": "./src", // къде са TS файловете
+    "outDir": "./dist", // къде да се генерират JS файловете
+    "strict": true,
+    "esModuleInterop": true, // за import express from 'express'
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "types": [
+      "node",
+      "express",
+      "axios"
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ] // важна част за IntelliSense и компилация
+}
